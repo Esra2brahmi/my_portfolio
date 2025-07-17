@@ -13,35 +13,40 @@ const FeedbackCard = ({
   designation,
   company,
   image,
-}) => (
-  <motion.div
-    variants={fadeIn("", "spring", index * 0.5, 0.75)}
-    className='bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full'
-  >
-    <p className='text-white font-black text-[48px]'>"</p>
-
-    <div className='mt-1'>
-      <p className='text-white tracking-wider text-[18px]'>{testimonial}</p>
-
-      <div className='mt-7 flex justify-between items-center gap-1'>
-        <div className='flex-1 flex flex-col'>
-          <p className='text-white font-medium text-[16px]'>
-            <span className='blue-text-gradient'>@</span> {name}
-          </p>
-          <p className='mt-1 text-secondary text-[12px]'>
-            {designation} of {company}
-          </p>
-        </div>
-
+}) => {
+  const [hovered, setHovered] = React.useState(false);
+  return (
+    <motion.div
+      variants={fadeIn("", "spring", index * 0.5, 0.75)}
+      className='bg-black-200 p-0 rounded-3xl xs:w-[320px] w-full overflow-hidden flex flex-col items-center relative group'
+      style={{ minHeight: 320 }}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      <div className='relative w-full flex justify-center items-center bg-white p-4'>
         <img
           src={image}
-          alt={`feedback_by-${name}`}
-          className='w-10 h-10 rounded-full object-cover'
+          alt={testimonial}
+          className='w-auto h-auto max-w-full max-h-[200px] rounded-2xl shadow transition-transform duration-300 group-hover:opacity-60'
         />
+        {hovered && (
+          <div className='absolute inset-0 flex justify-center items-center bg-black bg-opacity-80 z-10'>
+            <img
+              src={image}
+              alt={testimonial}
+              className='w-auto h-auto max-w-[90%] max-h-[90%] rounded-2xl shadow-2xl border-4 border-white'
+              style={{ boxShadow: '0 8px 32px rgba(0,0,0,0.5)' }}
+            />
+          </div>
+        )}
       </div>
-    </div>
-  </motion.div>
-);
+      <div className='w-full flex flex-col items-center justify-center py-4 px-2'>
+        <p className='text-white font-bold text-[16px] text-center'>{testimonial}</p>
+        <p className='text-secondary text-[14px] text-center'>{name}</p>
+      </div>
+    </motion.div>
+  );
+};
 
 const Feedbacks = () => {
   return (
@@ -50,8 +55,8 @@ const Feedbacks = () => {
         className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
       >
         <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>What others say</p>
-          <h2 className={styles.sectionHeadText}>Testimonials.</h2>
+          <p className={styles.sectionSubText}>My Achievements</p>
+          <h2 className={styles.sectionHeadText}>Certificates.</h2>
         </motion.div>
       </div>
       <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>

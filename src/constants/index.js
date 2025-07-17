@@ -23,7 +23,17 @@ import {
   jobit,
   tripguide,
   threejs,
+  github
 } from "../assets";
+import pawnpatch from "../assets/logo pwn&patch light background + name.png";
+import yottabyte from "../assets/image.png";
+import codingbetounsi from "../assets/image copy.png";
+import geekshack from "../assets/geekshack.png";
+import codeherways from "../assets/codeHerWays.png";
+import aws from "../assets/aws.png";
+import onset from "../assets/onSet.png";
+import ipeis from "../assets/ipeis.png";
+import ensit from "../assets/ensit.png";
 
 export const navLinks = [
   {
@@ -42,224 +52,214 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Full-Stack Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "AI Engineer",
+    icon: creator,
   },
   {
-    title: "Backend Developer",
+    title: "Backend Specialist",
     icon: backend,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "Mobile App Developer",
+    icon: mobile,
   },
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  { name: "React", icon: reactjs },
+  { name: "Next.js", icon: reactjs },
+  { name: "TypeScript", icon: typescript },
+  { name: "JavaScript", icon: javascript },
+  { name: "Tailwind CSS", icon: tailwind },
+  { name: "Node.js", icon: nodejs },
+  { name: "MongoDB", icon: mongodb },
+  { name: "Git", icon: git },
+  { name: "Docker", icon: docker },
+  { name: "Three.js", icon: threejs },
+  { name: "CSS", icon: css },
+  { name: "HTML", icon: html },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "AI & Software Engineering Intern",
+    company_name: "Pawn & Patch",
+    icon: pawnpatch,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "January 2025 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed backend services to automate security analysis from vendors like *VirusTotal* and *AbuseIPDB*.",
+      "Built interactive dashboards and reports for threat scoring and incident details while engineering a custom pipeline to handle bulk lookups with efficient queuing and rate-limiting strategies.",
+      "Contributed to intelligent threat classification and predictive risk scoring using *machine learning*.",
+      "Collaborated with a small team using *Git*, *Ruby on Rails*, *PostgreSQL*, and *Python*."
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "AI & Software Engineering Intern",
+    company_name: "Yottabyte",
+    icon: yottabyte,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "July 2025 - August 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Contributed to the development of an AI-powered video call platform with real-time communication and intelligent meeting features.",
+      "Implemented automated meeting summaries, transcript generation, and AI-based chat using *OpenAI*.",
+      "Worked across the full stack using *Next.js 15*, *React 19*, *Tailwind CSS*, *Shadcn UI*, and *FastAPI* while integrating third-party services including *Stream Video/Chat SDKs* and *Stripe* for payments.",
+      "Deployed backend services using *Inngest* and serverless infrastructure for scalable, real-time performance."
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Software Developer Intern",
+    company_name: "Coding Betounsi",
+    icon: codingbetounsi,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "July 2024 - August 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed a full-stack Point of Sale (POS) application using *Angular* and *FastAPI (Python)*.",
+      "Integrated authentication and role-based access control for secure user management.",
+      "Received code reviews and applied feedback to improve code quality and best practices, gaining valuable experience in collaborative development processes."
     ],
   },
 ];
 
 const testimonials = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    testimonial: "GeeksHack 4.0 Hackathon",
+    name: "Hackathon Achievement",
+    designation: "Certificate",
+    company: "GeeksHack 4.0",
+    image: geekshack,
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    testimonial: "Code Her Ways 2.0 Hackathon",
+    name: "Hackathon Achievement",
+    designation: "Certificate",
+    company: "Code Her Ways 2.0",
+    image: codeherways,
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    testimonial: "AWS Machine Learning Foundations",
+    name: "Amazon Web Services",
+    designation: "Certificate",
+    company: "Amazon Web Services",
+    image: aws,
+  },
+  {
+    testimonial: "English Onset - B2",
+    name: "English",
+    designation: "Certificate",
+    company: "Onset",
+    image: onset,
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "LupusAI - AI Powered GitHub Assistant for Developers",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Built and deployed a full-stack GitHub-style development tool using Next.js 15 and Google Gemini AI. Features include repository-based Q&A with RAG (Retrieval-Augmented Generation), smart commit insights, user authentication via Clerk, and real-time meeting transcriptions with AssemblyAI. Integrated Stripe for payments and deployed on Vercel with NeonDB for scalable data management.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "nextjs", color: "blue-text-gradient" },
+      { name: "gemini", color: "green-text-gradient" },
+      { name: "tailwind", color: "pink-text-gradient" },
+      { name: "shadcn", color: "blue-text-gradient" },
+      { name: "stripe", color: "green-text-gradient" },
+      { name: "neondb", color: "pink-text-gradient" },
+      { name: "firebase", color: "blue-text-gradient" },
+      { name: "assemblyai", color: "green-text-gradient" },
+      { name: "vercel", color: "pink-text-gradient" },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: carrent, // placeholder
+    source_code_link: "https://github.com/Esra2brahmi/github-ai",
   },
   {
-    name: "Job IT",
+    name: "AI-Powered DNA Mutation Pathogenicity Predictor",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Developed a full-stack web application to predict the pathogenicity of DNA mutations using the Evo2 language model. Deployed a FastAPI backend with GPU acceleration via Modal and created a Next.js + Tailwind frontend for genome browsing, mutation input, and AI-based variant effect analysis. Integrated with UCSC and NCBI APIs for comprehensive genomic data access.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
+      { name: "python", color: "blue-text-gradient" },
+      { name: "fastapi", color: "green-text-gradient" },
+      { name: "modal", color: "pink-text-gradient" },
+      { name: "evo2", color: "blue-text-gradient" },
+      { name: "nextjs", color: "green-text-gradient" },
+      { name: "react", color: "pink-text-gradient" },
+      { name: "typescript", color: "blue-text-gradient" },
+      { name: "tailwind", color: "green-text-gradient" },
+      { name: "shadcn", color: "pink-text-gradient" },
+      { name: "ucsc api", color: "blue-text-gradient" },
+      { name: "ncbi", color: "green-text-gradient" },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: jobit, // placeholder
+    source_code_link: "https://github.com/Esra2brahmi/AI-Powered-DNA-Variant-Effect-Prediction-Tool",
   },
   {
-    name: "Trip Guide",
+    name: "AI-Powered Video Call Platform with Real-Time Agents",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Built a comprehensive full-stack application enabling real-time video calls with AI agents, automated meeting transcripts, summaries, and Q&A functionality. Integrated Stream SDK for video capabilities, OpenAI for intelligent features, and Inngest for asynchronous job processing. Supports subscription management, authentication, and mobile responsiveness.",
     tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+      { name: "nextjs", color: "blue-text-gradient" },
+      { name: "react", color: "green-text-gradient" },
+      { name: "tailwind", color: "pink-text-gradient" },
+      { name: "shadcn", color: "blue-text-gradient" },
+      { name: "stream", color: "green-text-gradient" },
+      { name: "openai", color: "pink-text-gradient" },
+      { name: "inngest", color: "blue-text-gradient" },
+      { name: "polar", color: "green-text-gradient" },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: tripguide, // placeholder
+    source_code_link: "https://github.com/Esra2brahmi/collab-sphere-ai",
+  },
+  {
+    name: "ProjectSync — Academic Project Management Platform",
+    description:
+      "Developed a web platform to digitize and streamline academic project management in universities. Features include project tracking, task management, team communication, and document sharing in a unified interface. Built using .NET and React with Scrum methodology for flexibility and continuous improvement throughout the development process.",
+    tags: [
+      { name: ".net", color: "blue-text-gradient" },
+      { name: "react", color: "green-text-gradient" },
+      { name: "c#", color: "pink-text-gradient" },
+      { name: "scrum", color: "blue-text-gradient" },
+    ],
+    image: carrent, // placeholder
+    source_code_link: "https://github.com/Esra2brahmi/ProjectSync_server",
+  },
+  {
+    name: "MedLink — Healthcare Appointment & Document Management App",
+    description:
+      "Created a cross-platform mobile application designed to streamline appointment scheduling, consultations, and medical document sharing for both patients and healthcare professionals. Developed with Ionic 6+ and Angular for the frontend and Flask for the backend API, ensuring a smooth and efficient user experience across all devices.",
+    tags: [
+      { name: "ionic", color: "blue-text-gradient" },
+      { name: "angular", color: "green-text-gradient" },
+      { name: "flask", color: "pink-text-gradient" },
+      { name: "restapi", color: "blue-text-gradient" },
+      { name: "mongodb", color: "green-text-gradient" },
+    ],
+    image: jobit, // placeholder
+    source_code_link: "https://github.com/Esra2brahmi/CareMate_server",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const education = [
+  {
+    degree: "Master's Degree in Intelligent Systems (ISI)",
+    school: "ENSIT - National Higher School of Engineers of Tunis",
+    date: "September 2025 - August 2026",
+    image: ensit,
+  },
+  {
+    degree: "Software Engineering Degree",
+    school: "ENSIT - National Higher School of Engineers of Tunis",
+    date: "2023 - Present",
+    image: ensit,
+  },
+  {
+    degree: "Preparatory Cycle Degree for Engineering Studies in Mathematics and Physics",
+    school: "IPEIS - Preparatory Institute for Engineering Studies of Sfax",
+    date: "2021 - June 2023",
+    image: ipeis,
+  },
+];
+
+export { services, technologies, experiences, testimonials, projects, education };

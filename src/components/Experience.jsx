@@ -27,7 +27,7 @@ const ExperienceCard = ({ experience }) => {
           <img
             src={experience.icon}
             alt={experience.company_name}
-            className='w-[60%] h-[60%] object-contain'
+            className='w-full h-full object-cover rounded-full bg-white'
           />
         </div>
       }
@@ -48,7 +48,13 @@ const ExperienceCard = ({ experience }) => {
             key={`experience-point-${index}`}
             className='text-white-100 text-[14px] pl-1 tracking-wider'
           >
-            {point}
+            {point.split(/(\*[^*]+\*)/g).map((part, i) =>
+              part.startsWith('*') && part.endsWith('*') ? (
+                <strong key={i}>{part.slice(1, -1)}</strong>
+              ) : (
+                part
+              )
+            )}
           </li>
         ))}
       </ul>

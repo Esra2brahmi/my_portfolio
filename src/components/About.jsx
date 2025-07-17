@@ -47,11 +47,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        Hey, I'm Issra — a final year software engineering student who's genuinely excited about building things that matter. I'm currently pursuing my Master's in Intelligent Systems, and I love working at the sweet spot where full-stack development meets AI. Through my internships and personal projects, I've gotten my hands dirty with everything from automated security tools to intelligent video platforms. What really gets me going is the endless potential of AI and ML to change how we interact with technology. I'm always eager to learn something new and collaborate with people who share that same curiosity.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

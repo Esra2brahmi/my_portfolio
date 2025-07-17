@@ -34,6 +34,11 @@ import aws from "../assets/aws.png";
 import onset from "../assets/onSet.png";
 import ipeis from "../assets/ipeis.png";
 import ensit from "../assets/ensit.png";
+import lupus from "../assets/lupus.png";
+import evo2 from "../assets/evo2.png";
+import meetAI from "../assets/meetAi.png";
+import project from "../assets/project.png";
+import mobileapp from "../assets/mobileapp.png";
 
 export const navLinks = [
   {
@@ -172,7 +177,7 @@ const projects = [
       { name: "assemblyai", color: "green-text-gradient" },
       { name: "vercel", color: "pink-text-gradient" },
     ],
-    image: carrent, // placeholder
+    image: lupus,
     source_code_link: "https://github.com/Esra2brahmi/github-ai",
   },
   {
@@ -192,7 +197,7 @@ const projects = [
       { name: "ucsc api", color: "blue-text-gradient" },
       { name: "ncbi", color: "green-text-gradient" },
     ],
-    image: jobit, // placeholder
+    image: evo2,
     source_code_link: "https://github.com/Esra2brahmi/AI-Powered-DNA-Variant-Effect-Prediction-Tool",
   },
   {
@@ -209,8 +214,8 @@ const projects = [
       { name: "inngest", color: "blue-text-gradient" },
       { name: "polar", color: "green-text-gradient" },
     ],
-    image: tripguide, // placeholder
-    source_code_link: "https://github.com/Esra2brahmi/collab-sphere-ai",
+    image: meetAI,
+    source_code_link: "https://github.com/",
   },
   {
     name: "ProjectSync — Academic Project Management Platform",
@@ -222,7 +227,7 @@ const projects = [
       { name: "c#", color: "pink-text-gradient" },
       { name: "scrum", color: "blue-text-gradient" },
     ],
-    image: carrent, // placeholder
+    image: project,
     source_code_link: "https://github.com/Esra2brahmi/ProjectSync_server",
   },
   {
@@ -236,8 +241,8 @@ const projects = [
       { name: "restapi", color: "blue-text-gradient" },
       { name: "mongodb", color: "green-text-gradient" },
     ],
-    image: jobit, // placeholder
-    source_code_link: "https://github.com/Esra2brahmi/CareMate_server",
+    image: mobileapp,
+    source_code_link: "https://github.com/",
   },
 ];
 
@@ -245,19 +250,19 @@ const education = [
   {
     degree: "Master's Degree in Intelligent Systems (ISI)",
     school: "ENSIT - National Higher School of Engineers of Tunis",
-    date: "September 2025 - August 2026",
+    date: "September 2025 - June 2026",
     image: ensit,
   },
   {
     degree: "Software Engineering Degree",
     school: "ENSIT - National Higher School of Engineers of Tunis",
-    date: "2023 - Present",
+    date: "September 2023 - June 2026",
     image: ensit,
   },
   {
     degree: "Preparatory Cycle Degree for Engineering Studies in Mathematics and Physics",
     school: "IPEIS - Preparatory Institute for Engineering Studies of Sfax",
-    date: "2021 - June 2023",
+    date: "September 2021 - June 2023",
     image: ipeis,
   },
 ];

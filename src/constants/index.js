@@ -39,6 +39,7 @@ import evo2 from "../assets/evo2.png";
 import meetAI from "../assets/meetAi.png";
 import project from "../assets/project.png";
 import mobileapp from "../assets/mobileapp.png";
+import oracleCert from "../assets/oracle-certificate.png";
 
 export const navLinks = [
   {
@@ -158,6 +159,13 @@ const testimonials = [
     designation: "Certificate",
     company: "Onset",
     image: onset,
+  },
+  {
+    testimonial: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
+    name: "Oracle",
+    designation: "Certificate",
+    company: "Oracle",
+    image: oracleCert,
   },
 ];
 

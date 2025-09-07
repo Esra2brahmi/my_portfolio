@@ -22,6 +22,8 @@ const FeedbackCard = ({
       style={{ minHeight: 320 }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      animate={{ scale: hovered ? 1.08 : 1 }}
+      transition={{ type: 'spring', stiffness: 300, damping: 20 }}
     >
       <div className='relative w-full flex justify-center items-center bg-white p-4'>
         <img
@@ -59,7 +61,7 @@ const Feedbacks = () => {
           <h2 className={styles.sectionHeadText}>Certificates.</h2>
         </motion.div>
       </div>
-      <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
+      <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-10`}>
         {testimonials.map((testimonial, index) => (
           <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
         ))}

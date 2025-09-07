@@ -40,6 +40,7 @@ import meetAI from "../assets/meetAi.png";
 import project from "../assets/project.png";
 import mobileapp from "../assets/mobileapp.png";
 import oracleCert from "../assets/oracle-certificate.png";
+import dockerCertificate from "../assets/docker-certificate.png";
 
 export const navLinks = [
   {
@@ -166,6 +167,13 @@ const testimonials = [
     designation: "Certificate",
     company: "Oracle",
     image: oracleCert,
+  },
+  {
+    testimonial: "Docker Certified Associate",
+    name: "Docker",
+    designation: "Certificate",
+    company: "Docker Inc.",
+    image: dockerCertificate,
   },
 ];
 

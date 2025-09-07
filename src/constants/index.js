@@ -41,6 +41,7 @@ import project from "../assets/project.png";
 import mobileapp from "../assets/mobileapp.png";
 import oracleCert from "../assets/oracle-certificate.png";
 import dockerCertificate from "../assets/docker-certificate.png";
+import kubernetesCertificate from "../assets/kubernetes-certificate.png";
 
 export const navLinks = [
   {
@@ -174,6 +175,13 @@ const testimonials = [
     designation: "Certificate",
     company: "Docker Inc.",
     image: dockerCertificate,
+  },
+  {
+    testimonial: "Kubernetes Certified Associate",
+    name: "Kubernetes",
+    designation: "Certificate",
+    company: "Cloud Native Computing Foundation",
+    image: kubernetesCertificate,
   },
 ];
 

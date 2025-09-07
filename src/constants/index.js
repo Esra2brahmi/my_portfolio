@@ -75,6 +75,10 @@ const services = [
     title: "Mobile App Developer",
     icon: mobile,
   },
+  {
+    title: "DevOps Enthusiast",
+    icon: docker,
+  },
 ];
 
 const technologies = [
